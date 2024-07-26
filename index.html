@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course à pieds</title>
+</head>
+<body>
+    <header>
+        <h1 class="header__title">Calculateur d'allures</h1>
+    </header>
+    <section>
+        <form class="formReference" method="get">
+            <h2>Calcul via la fréquence cardiaque</h2>
+            <label for="maxHR">Fréquence cardiaque max :</label><br>
+            <input type="number" id="maxHR" name="maxHR"/><br>
+            <label for="restHR">Fréquence cardiaque au repos :</label><br>
+            <input type="number" id="restHR" name="restHR"/><br>
+            
+            <h2>Calcul via la VMA</h2>
+            <label for="vvo2">VMA :</label><br>
+            <input type="number" id="vvo2" name="vvo2"/>km/h<br>
+            
+            <h2>Calcul via un temps de course référence</h2>
+            <label for="pbLength">Distance :</label><br>
+            <select id="pbLength" name="pbLength">
+                <option value="5km">5km</option>
+                <option value="10km">10km</option>
+                <option value="21km">Semi-marathon</option>
+                <option value="42km">Marathon</option>
+            </select><br>
+            <label for="pbTime">Temps :</label><br>
+            <input type="time" id="pbTime" name="pbTime" step="1"/><br>
+            
+            <input type="submit" value="Calculer"/>
+        </form>
+    </section>
+</body>
+</html>
