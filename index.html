@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course à pieds</title>
+    <script src="paceCalculator.js" defer></script>
 </head>
 <body>
     <header>
         <h1 class="header__title">Calculateur d'allures</h1>
     </header>
     <section>
-        <form class="formReference" method="get">
+        <form class="form__parameters" method="get">
+
             <h2>Calcul via la fréquence cardiaque</h2>
             <label for="maxHR">Fréquence cardiaque max :</label><br>
             <input type="number" id="maxHR" name="maxHR"/><br>
@@ -32,7 +34,7 @@
             <label for="pbTime">Temps :</label><br>
             <input type="time" id="pbTime" name="pbTime" step="1"/><br>
             
-            <input type="submit" value="Calculer"/>
+            <input id="submitParameters" type="submit" value="Calculer"/>
         </form>
     </section>
 </body>
